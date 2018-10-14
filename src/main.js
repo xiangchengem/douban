@@ -5,11 +5,15 @@ import App from './App'
 import router from './router'
 import Vant from 'vant';
 import 'vant/lib/vant-css/index.css';
-import { Row, Col } from 'vant';
-import { Swipe, SwipeItem } from 'vant';
+import {
+  Row,
+  Swipe,
+  Col,
+  SwipeItem,
+  Icon,
+  Rate
+} from 'vant';
 import VueResource from 'vue-resource';
-import { Icon } from 'vant';
-import { Rate } from 'vant';
 Vue.use(Rate);
 Vue.use(Icon);
 Vue.use(VueResource)
@@ -24,5 +28,5 @@ new Vue({
   router,
   // components: { App },
   // template: '<App/>'
-  render:c=>c(App)
+  render: c => c(App)
 })
